@@ -14,3 +14,15 @@ The result will show
 
 this script will search for the columns containing the search value if you looking for the exact value just remove the %
 SET @SearchStr2 = QUOTENAME( '<Search string here>' ,'''') 
+  
+  
+  * FindValueInDatabase
+  This query will search the whole database for the column name
+  
+  Use the satabase first.
+  Then put the column name in the where clause
+  
+  where COLUMN_NAME LIKE '%Column name%
+  
+  The result will be
+  [Database name].[dbo].[table name], column name, prepared query for getting data from that table

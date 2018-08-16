@@ -22,7 +22,10 @@ SET @SearchStr2 = QUOTENAME( '<Search string here>' ,'''')
   Use the satabase first.
   Then put the column name in the where clause
   
-  where COLUMN_NAME LIKE '%Column name%
+  where COLUMN_NAME LIKE '%Column name%'
+  
+  This will search for column names contains the search values if you looking for the exact value just remove %
+  where COLUMN_NAME LIKE 'Column name'
   
   The result will be
   [Database name].[dbo].[table name], column name, prepared query for getting data from that table

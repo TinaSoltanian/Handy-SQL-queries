@@ -29,3 +29,6 @@ SET @SearchStr2 = QUOTENAME( '<Search string here>' ,'''')
   
   The result will be
   [Database name].[dbo].[table name], column name, prepared query for getting data from that table
+
+* ClearNonNumericCharacters 
+This function is to remove all non numberics from given string.

@@ -1,7 +1,7 @@
 # Handy-SQL-queries
 Some Handy SQL queries 
 
-* FindValueInDatabase
+* *FindValueInDatabase*
 This query is searching in all tables and  columns for the given value.
 
 Use the database that looking for the value 
@@ -16,7 +16,7 @@ this script will search for the columns containing the search value if you looki
 SET @SearchStr2 = QUOTENAME( '<Search string here>' ,'''') 
   
   
-  * FindValueInDatabase
+  * *FindValueInDatabase*
   This query will search the whole database for the column name
   
   Use the satabase first.
@@ -30,5 +30,5 @@ SET @SearchStr2 = QUOTENAME( '<Search string here>' ,'''')
   The result will be
   [Database name].[dbo].[table name], column name, prepared query for getting data from that table
 
-* ClearNonNumericCharacters 
+* *ClearNonNumericCharacters*
 This function is to remove all non numberics from given string.

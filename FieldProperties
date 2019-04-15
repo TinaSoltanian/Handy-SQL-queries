@@ -1,0 +1,14 @@
+-- Get the properties of specific column from a table
+
+select 
+        st.name [Table],
+        sc.name [Column],
+        sep.value [Description],
+		sc.is_computed
+    from sys.tables st
+    inner join sys.columns sc on st.object_id = sc.object_id
+    left join sys.extended_properties sep on st.object_id = sep.major_id
+                                         and sc.column_id = sep.minor_id
+                                         and sep.name = 'MS_Description'
+    where st.name = 'TableName'
+    and sc.name = 'Column Name'	

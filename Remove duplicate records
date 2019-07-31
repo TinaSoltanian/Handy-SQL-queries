@@ -1,0 +1,5 @@
+WITH DubP AS( select * , RN= ROW_NUMBER() 
+OVER(PARTITION BY c1,c2 
+order by c1,c2) 
+from tabel1 ) 
+DELETE FROM DubP WHERE RN >1 
